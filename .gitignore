@@ -1,0 +1,19 @@
+# Segredos: NUNCA versionar. Use o .env.example de cada projeto como modelo.
+.env
+.env.*
+!.env.example
+
+# Ambientes e caches
+.venv/
+__pycache__/
+.ruff_cache/
+
+# Logs gerados ao rodar os bots
+*.log
+
+# Binarios baixados (ex.: cloudflared). Veja o LEIAME.md dentro de cada pasta tools/
+**/tools/*.exe
+
+# Modelos de voz baixados pelo Piper
+*.onnx
+*.onnx.json
