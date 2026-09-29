@@ -17,7 +17,7 @@ transporte (entrada) -> STT -> LLM -> TTS -> transporte (saida)
 Cada etapa e trocavel por configuracao (Groq, Gemini, OpenAI, Piper, Deepgram...).
 O Pipecat trata interrupcoes (o usuario fala por cima do bot) e turnos de fala.
 
-## O que testamos (ver `../README.md`)
+## O que testamos (ver README.md)
 | Projeto | Resultado |
 |---|---|
 | `pipecat-teste` | Funciona. Voz no navegador: Groq (STT+LLM) + Piper (TTS local, pt-BR). |
@@ -36,7 +36,7 @@ O Pipecat trata interrupcoes (o usuario fala por cima do bot) e turnos de fala.
 - **Camadas gratuitas tem limites baixos**, principalmente TTS (Gemini: 3 req/min no modelo testado).
   O LLM gratuito do Gemini tambem estourou (5 req/min).
 - **Windows + Smart App Control:** os `.exe` gerados pelo `uv` (`pipecat.exe`) sao bloqueados por nao
-  terem assinatura. Chamar o modulo pelo Python assinado funciona (ver `../README.md`).
+  terem assinatura. Chamar o modulo pelo Python assinado funciona (ver README.md).
 - **Telefonia real** exige plano pago no provedor (no teste, o trial da Twilio nao serviu).
 - `piper-tts` e GPL: ok para estudo, conferir antes de usar em produto fechado.
 - O `pipecat init` registra por padrao um servidor MCP nos agentes de codigo; usamos `--no-context-hub`.

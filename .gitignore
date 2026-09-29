@@ -17,3 +17,4 @@ __pycache__/
 # Modelos de voz baixados pelo Piper
 *.onnx
 *.onnx.json
+
